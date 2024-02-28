@@ -6,7 +6,7 @@ export default function Footer() {
          <nav className='flex gap-3'>
             <a
                href='https://t.me/nightwanderer2004'
-               className='badge link-hover badge-primary text-white badge-lg p-3'
+               className='badge link-hover badge-secondary text-white badge-lg p-3'
                target='_blank'
                rel='noopener noreferrer'
             >
