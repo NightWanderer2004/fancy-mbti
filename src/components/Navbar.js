@@ -3,7 +3,7 @@ import React from 'react'
 
 export default function Navbar() {
    return (
-      <nav className='navbar bg-white/55 glass fixed top-0 left-0 z-50 py-0'>
+      <nav className='navbar bg-gray-200/40 border-b border-base-200 backdrop-blur-md fixed top-0 left-0 z-50 py-0'>
          <div className='flex-1 container mx-auto md:px-12 lg:px-16'>
             <a href='/' className='font-aspekta font-medium text-xl flex items-center gap-1'>
                <Image src='/logo.png' width={44} height={44} />
