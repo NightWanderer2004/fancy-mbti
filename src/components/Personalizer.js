@@ -257,24 +257,24 @@ export default function Personalizer() {
    }
 
    return (
-      <div id='personalizer' className='relative py-6'>
-         <div className='bg-base-200 absolute top-0 -left-5 w-screen h-full -z-20 rounded-xl'></div>
-         <h1 className='font-aspekta font-semibold mt-0 mb-3'>
-            Realize your potential with <br /> <span className='text-primary'>AI system</span>
+      <div id='personalizer' className='relative py-8'>
+         <div className='bg-base-200 absolute top-0 -left-5 md:-left-12 lg:-left-5 w-screen lg:w-[113%] h-full -z-20 rounded-xl'></div>
+         <h1 className='font-aspekta font-semibold lg:text-3xl mt-0 mb-3'>
+            Realize your potential with <span className='text-primary'>AI</span>
          </h1>
-         <p className='mt-0'>
-            Just type your <span className='text-secondary font-medium font-aspekta'>MBTI</span>, maybe{' '}
-            <span className='text-secondary font-medium font-aspekta'>hobbies</span> or your{' '}
-            <span className='text-secondary font-medium font-aspekta'>profession</span>,{' '}
-            <span className='text-secondary font-medium font-aspekta'>country</span> where you live,
-            <span className='text-secondary font-medium font-aspekta'>language</span> you speak,{' '}
-            <span className='text-secondary font-medium font-aspekta'>age</span>
+         <p className='mt-0 leading-relaxed max-w-sm sm:max-w-full md:max-w-xl xl:max-w-lg'>
+            Just type your <span className='text-primary font-medium font-aspekta'>MBTI</span>, maybe{' '}
+            <span className='text-primary font-medium font-aspekta'>hobbies</span> or your{' '}
+            <span className='text-primary font-medium font-aspekta'>profession</span>,{' '}
+            <span className='text-primary font-medium font-aspekta'>country</span> where you live,{' '}
+            <span className='text-primary font-medium font-aspekta'>language</span> you speak,{' '}
+            <span className='text-primary font-medium font-aspekta'>age</span>
          </p>
          <form className='bg-transparent flex items-center gap-2 border-b-2 border-base-300 pb-2 mt-8'>
             <textarea
                className='w-full bg-transparent text-primary text-lg font-aspekta leading-normal resize-none outline-none'
                placeholder='INTJ, Professor, reading, traveling, Japan, English and Japanese, 30 y.o.'
-            />{' '}
+            />
             <button className='btn btn-primary rounded-full w-12 relative left-2'>
                <svg className='scale-[200%]' width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'>
                   <path
@@ -293,7 +293,7 @@ export default function Personalizer() {
             </button>
          </form>
          <svg
-            className='absolute bottom-14 right-10 rotate-[35deg] w-[160px] pointer-events-none'
+            className='absolute bottom-[58px] right-10 rotate-[35deg] w-[160px] pointer-events-none'
             width='253'
             height='119'
             viewBox='0 0 253 119'
