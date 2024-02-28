@@ -275,8 +275,15 @@ export default function Personalizer() {
                className='w-full bg-transparent text-primary text-lg font-aspekta leading-normal resize-none outline-none'
                placeholder='INTJ, Professor, reading, traveling, Japan, English and Japanese, 30 y.o.'
             />
-            <button className='btn btn-primary rounded-full w-12 relative left-2'>
-               <svg className='scale-[200%]' width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'>
+            <button className='btn btn-primary rounded-full w-12 relative left-2 group'>
+               <svg
+                  className='scale-[200%] group-active:translate-x-0.5 transition-transform'
+                  width='24'
+                  height='24'
+                  viewBox='0 0 24 24'
+                  fill='none'
+                  xmlns='http://www.w3.org/2000/svg'
+               >
                   <path
                      className='fill-base-100'
                      d='M12.0519 14.8285L13.4661 16.2427L17.7088 12L13.4661 7.7574L12.0519 9.17161L13.8804 11H6.34321V13H13.8803L12.0519 14.8285Z'
