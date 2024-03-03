@@ -15,9 +15,11 @@ module.exports = {
          {
             winter: {
                ...require('daisyui/src/theming/themes')['winter'],
-               primary: '#3b82f6',
+               primary: '#818cf8',
                secondary: '#60a5fa',
                accent: '#34d399',
+               neutral: '#394e6a',
+               'base-200': '#eef2ff',
             },
          },
       ],

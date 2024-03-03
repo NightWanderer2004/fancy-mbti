@@ -13,7 +13,7 @@ export default function Hero() {
                <p className='py-3 text-lg max-w-sm'>
                   Take a journey of self-discovery with MBTI. Platform will guide you in understanding your personality and using your potential!
                </p>
-               <div className='lg:hidden'>
+               <div className='md:hidden'>
                   <a href='#personalizer' className='no-underline btn btn-primary text-base-100 btn-md font-aspekta'>
                      Realize my potential
                   </a>
