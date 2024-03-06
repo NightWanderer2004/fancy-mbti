@@ -6,10 +6,17 @@ import TextareaAutosize from 'react-textarea-autosize'
 
 export default function Personalizer({ setResponse, setIsLoading, isLoading }) {
    const [input, setInput] = useState('')
+   const [error, setError] = useState('')
 
    const handleSubmit = async e => {
       e.preventDefault()
+      if (input.trim() == '') {
+         setError('Please enter your data')
+         return
+      }
+
       setIsLoading(true)
+      setError('')
       setResponse('')
 
       const generateText = async () => {
@@ -39,9 +46,9 @@ export default function Personalizer({ setResponse, setIsLoading, isLoading }) {
    }
 
    return (
-      <div id='personalizer' className='pt-24 md:pt-0'>
+      <div id='personalizer' className='pt-24 md:pt-0 relative z-20'>
          <div className='relative py-8'>
-            <div className='bg-base-200/55 absolute top-0 -left-5 w-screen md:w-[114%] h-full -z-20 rounded-2xl'></div>
+            <div className='bg-base-200/20 absolute top-0 -left-5 w-screen md:w-[114%] h-full -z-20 rounded-2xl'></div>
             <h1 className='font-aspekta font-semibold md:text-3xl mt-0 mb-3'>
                Realize your potential with <span className='text-primary'>AI</span>
             </h1>
@@ -54,20 +61,25 @@ export default function Personalizer({ setResponse, setIsLoading, isLoading }) {
             </p>
             <form
                onSubmit={handleSubmit}
-               className='relative bg-transparent flex items-start border-b-2 border-base-300 pb-2 mt-12 sm:mt-8 md:mt-12 xl:mt-8'
+               className='relative bg-transparent flex items-start border-b-2 border-primary/50 pb-2 mt-12 sm:mt-8 md:mt-12 xl:mt-8'
             >
                <TextareaAutosize
                   minRows={2}
                   maxRows={6}
                   maxLength={255}
-                  onChange={e => setInput(e.target.value)}
+                  onChange={e => {
+                     setError('')
+                     setInput(e.target.value)
+                  }}
                   value={input}
-                  className='w-full bg-transparent text-neutral text-lg font-aspekta leading-normal resize-none outline-none'
-                  placeholder='INTJ, Professor, reading, traveling, English and Japanese, 30 y.o.'
+                  className={`w-full bg-transparent ${
+                     error ? 'placeholder:text-error' : 'text-neutral'
+                  } text-lg font-aspekta leading-normal resize-none outline-none`}
+                  placeholder={error ? error : `INTJ, Professor, reading, traveling, English and Japanese, 30 y.o.`}
                />
-               <button className='btn btn-primary rounded-full w-12 relative top-2 group' disabled={isLoading}>
+               <button className='btn btn-accent rounded-full w-12 relative top-2' disabled={isLoading}>
                   <svg
-                     className='scale-[200%] group-active:translate-x-0.5 transition-transform'
+                     className='scale-[200%] transition-transform'
                      width='24'
                      height='24'
                      viewBox='0 0 24 24'
