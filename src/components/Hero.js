@@ -1,16 +1,16 @@
 export default function Hero() {
    return (
-      <main className='hero xl:w-auto min-h-screen'>
+      <main className='hero xl:w-auto min-h-screen relative z-50'>
          <div className='hero-content px-0'>
             <div className='relative'>
-               <h1 className='text-6xl sm:leading-tight font-aspekta font-bold mb-0 max-w-lg'>
+               <h1 className='text-6xl md:text-7xl sm:leading-tight font-aspekta font-bold mb-0 max-w-lg'>
                   Explore yourself with{' '}
-                  <span className='text-base-100 relative z-10'>
+                  <span className='text-base-100 relative z-10 md:top-2'>
                      MBTI
-                     <div className='w-[165px] h-[65px] bg-primary -z-10 absolute top-[10px] -left-2 rotate-[-1.6deg]'></div>
+                     <div className='w-[165px] md:w-[195px] h-[65px] md:h-[75px] bg-primary -z-10 absolute top-[10px] md:top-[15px] -left-2 rotate-[-1.6deg]'></div>
                   </span>
                </h1>
-               <p className='py-3 text-lg max-w-sm'>
+               <p className='py-3 text-lg md:text-xl max-w-sm'>
                   Take a journey of self-discovery with MBTI. Platform will guide you in understanding your personality and using your potential!
                </p>
                <div className='md:hidden'>

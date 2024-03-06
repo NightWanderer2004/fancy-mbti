@@ -13,8 +13,8 @@ module.exports = {
    daisyui: {
       themes: [
          {
-            winter: {
-               ...require('daisyui/src/theming/themes')['winter'],
+            emerald: {
+               ...require('daisyui/src/theming/themes')['emerald'],
                // primary: '#818cf8',
                primary: '#c8d5bb',
                secondary: '#60a5fa',
