@@ -21,6 +21,8 @@ export default function RootLayout({ children }) {
             <div className='flex flex-col min-h-screen overflow-hidden relative'>
                <Navbar />
                <div className='container mx-auto px-5 md:px-12 lg:px-16 pb-[140px] flex-1 prose max-w-full'>{children}</div>
+               <div className='absolute bg-primary/90 w-[200px] md:w-[240px] h-[200px] md:h-[240px] rounded-full blur-[100px] top-[30px] md:top-0 -left-[25px] z-20'></div>
+               <div className='absolute bg-primary/90 w-[200px] h-[200px] rounded-full blur-[90px] top-[1200px] md:top-[600px] -right-[40px] md:-right-[170px] z-20'></div>
                <Footer />
             </div>
          </body>
