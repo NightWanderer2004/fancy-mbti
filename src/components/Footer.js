@@ -1,8 +1,6 @@
-import Image from 'next/image'
-
 export default function Footer() {
    return (
-      <footer className='container mx-auto md:px-12 lg:px-16 py-4 footer footer-center items-center gap-6 z-30'>
+      <footer className='container mx-auto md:px-12 lg:px-16 py-4 footer footer-center items-center gap-6 z-50'>
          <nav className='flex gap-3'>
             <a
                href='https://t.me/nightwanderer2004'
