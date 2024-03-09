@@ -9,7 +9,7 @@ export default function Home() {
    const [response, setResponse] = useState('')
    return (
       <div>
-         <div className='md:flex gap-10 lg:gap-14 xl:gap-16 items-center justify-center'>
+         <div className='md:flex gap-10 lg:gap-14 xl:gap-16 items-center justify-center animate-fadeUp'>
             <Hero />
             <Personalizer setResponse={setResponse} setIsLoading={setIsLoading} isLoading={isLoading} />
          </div>

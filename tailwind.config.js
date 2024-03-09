@@ -8,13 +8,13 @@ module.exports = {
             helvetica: ['Helvetica Neue', 'sans-serif'],
          },
          animation: {
-            fadeUp: 'fadeUp 700ms ease-in-out forwards',
+            fadeUp: 'fadeUp 300ms ease-out forwards',
          },
          keyframes: {
             fadeUp: {
                '0%': {
                   opacity: 0,
-                  transform: 'translateY(8px) scale(0.98)',
+                  transform: 'translateY(4px) scale(0.98)',
                },
                '100%': {
                   opacity: 1,

@@ -7,11 +7,15 @@ export default function Navbar() {
          <div className='flex-1 container mx-auto md:px-12 lg:px-16'>
             <a href='/' className='btn btn-ghost font-aspekta font-medium text-lg flex items-center gap-1 bg-gray-200/30 backdrop-blur-md px-3'>
                <Image src='/logo.png' width={36} height={36} />
-               <p>
-                  <span className='text-accent'>Fancy</span> MBTI
-               </p>
+               <span className='text-accent'>Fancy</span> MBTI
             </a>
          </div>
+         <a
+            href='/types'
+            className='btn btn-sm btn-ghost font-aspekta font-medium text-accent text-lg flex items-center gap-1 bg-gray-200/30 backdrop-blur-md px-3'
+         >
+            Types
+         </a>
       </nav>
    )
 }

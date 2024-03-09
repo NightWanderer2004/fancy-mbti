@@ -1,6 +1,6 @@
 export default function Hero() {
    return (
-      <main className='hero xl:w-auto min-h-screen relative z-30 animate-fadeUp'>
+      <main className='hero xl:w-auto min-h-screen relative z-30'>
          <div className='hero-content px-0'>
             <div className='relative'>
                <h1 className='text-6xl md:text-7xl sm:leading-tight font-aspekta font-bold mb-0 max-w-lg'>

@@ -8,7 +8,7 @@ export const metadata = {
    description: 'Explore yourself with MBTI',
 }
 
-export default function RootLayout({ children }) {
+export default function Seo({ children }) {
    return (
       <html lang='en'>
          <head>
