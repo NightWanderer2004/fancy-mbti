@@ -4,10 +4,15 @@ export default function Types() {
    return (
       <div className='pt-24 relative z-40 animate-fadeUp'>
          <div className='mb-16 relative'>
-            <h1 className='text-6xl md:text-7xl sm:leading-tight font-aspekta font-bold mb-0'>All MBTIs</h1>
-            <p className='text-lg md:text-xl'>Here are all the MBTI types. Select any and inspect useful information about it.</p>
+            <h1 className='text-5xl md:text-7xl sm:leading-tight font-aspekta font-bold mb-0'>All MBTIs</h1>
+            <p className='text-base md:text-xl'>
+               Here are all the MBTI types. Select any and inspect useful information about it.
+               <span className='text-accent text-sm font-aspekta block mt-2'>
+                  Note: This is common information taken from the internet. Each human is unique and cannot be defined entirely.
+               </span>
+            </p>
             <svg
-               className='absolute -bottom-[115px] left-0 w-[280px]'
+               className='pointer-events-none absolute -bottom-[115px] left-0 w-[290px]'
                width='1340'
                height='176'
                viewBox='0 0 1340 176'
