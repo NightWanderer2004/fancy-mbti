@@ -7,9 +7,9 @@ export default function Page({ params }) {
    if (!info) return <div>404</div>
 
    return (
-      <div className='pt-24 relative z-40 animate-fadeUp'>
+      <div className='pt-24 relative z-40 animate-fadeUp max-w-2xl mx-auto'>
          <svg
-            className='absolute top-[90px] right-3 w-[180px] rotate-[-45deg] scale-x-[-1]'
+            className='absolute top-[90px] md:top-[80px] right-3 w-[180px] md:w-[220px] rotate-[-45deg] scale-x-[-1]'
             width='253'
             height='119'
             viewBox='0 0 253 119'
@@ -31,10 +31,9 @@ export default function Page({ params }) {
                fill='black'
             />
          </svg>
-
-         <div className=' font-aspekta'>
-            <h1 className='text-6xl font-semibold mb-0'>{info.type}</h1>
-            <p className='mt-1 font-medium text-accent'>{info.name}</p>
+         <div className='font-aspekta'>
+            <h1 className='text-6xl md:text-7xl font-semibold mb-0'>{info.type}</h1>
+            <p className='mt-1 md:text-lg font-medium text-accent'>{info.name}</p>
          </div>
          <p>{info.about}</p>
          {Object.keys(info)

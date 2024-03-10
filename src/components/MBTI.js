@@ -12,7 +12,7 @@ export default function MBTI() {
 
 function Type({ type }) {
    return (
-      <a href={`/types/${type.type}`} className='btn justify-start text-start no-underline bg-base-100/80 rounded-lg h-[130px] text-lg'>
+      <a href={`/types/${type.type}`} className='btn justify-start text-start no-underline bg-base-100/50 rounded-lg h-[130px] text-lg'>
          <div>
             <div className='w-16 h-16 bg-accent rounded-md mb-2'></div>
             {type.type}

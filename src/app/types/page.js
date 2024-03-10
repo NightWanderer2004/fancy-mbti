@@ -12,7 +12,7 @@ export default function Types() {
                </span>
             </p>
             <svg
-               className='pointer-events-none absolute -bottom-[115px] left-0 w-[290px]'
+               className='pointer-events-none absolute -bottom-[115px] md:top-8 left-0 md:left-[50%] w-[290px] md:w-[660px] md:rotate-12'
                width='1340'
                height='176'
                viewBox='0 0 1340 176'
