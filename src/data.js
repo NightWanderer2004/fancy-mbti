@@ -2,6 +2,7 @@ module.exports = {
    types: [
       {
          type: 'INTP',
+         color: '#708090',
          name: 'Logician',
          about: 'INTPs are the quintessential philosophers and independent thinkers. Logical, objective, and open-minded, they thrive on imagination and originality. They value honesty and often deliver thoughts with no filter, which can lead to misunderstood interactions. Despite appearing aloof, INTPs possess an intensely loving and loyal heart, though they may struggle to express emotions conventionally.',
          purpose:
@@ -39,6 +40,7 @@ module.exports = {
       },
       {
          type: 'INTJ',
+         color: '#2f4f4f',
          name: 'Architect',
          about: 'INTJs are strategic and analytical individuals, known for their intelligence and vision. They are independent thinkers who value efficiency and excellence in all aspects of their lives. While they may appear aloof, INTJs possess a deep sense of purpose and determination.',
          purpose:
@@ -59,28 +61,8 @@ module.exports = {
             'While reserved in expressing emotions, INTJs show their love through acts of service and support. They prioritize the success and well-being of their loved ones and strive to create a stable and secure environment in which they can thrive.',
       },
       {
-         type: 'INFJ',
-         name: 'Advocate',
-         about: 'INFJs are insightful and compassionate individuals, known for their idealism and intuition. They are deeply empathetic and value authenticity and connection in their relationships. While they may appear reserved, INFJs possess a rich inner world and a strong sense of purpose.',
-         purpose:
-            'Driven by a desire to make a positive difference in the world, INFJs excel in roles that involve guiding and supporting others. They find fulfillment in helping individuals realize their potential and creating meaningful change in society.',
-         values:
-            'INFJs value authenticity and integrity, often striving to live in accordance with their deeply-held beliefs and values. They are idealistic and visionary, seeking to create a better world through their actions and ideas.',
-         jobs: ['Counselor/Psychologist', 'Writer/Author', 'Nonprofit Administrator', 'Social Worker', 'Teacher/Educator'],
-         strengths: ['Insightful', 'Compassionate', 'Idealistic', 'Intuitive', 'Empathetic', 'Creative', 'Visionary'],
-         weaknesses: ['Perfectionistic', 'Overly self-critical', 'Prone to burnout', 'Difficulty setting boundaries', 'Tendency to idealize others'],
-         catalyze:
-            'INFJs are motivated by a deep sense of purpose and a desire to make a positive impact on the world. They find fulfillment in helping others and creating meaningful connections with those around them. INFJs value authenticity, compassion, and personal growth in themselves and others.',
-         hates: "They're frustrated by injustice, insincerity, and lack of empathy. INFJs thrive in environments that value authenticity and encourage personal growth and connection.",
-         interests:
-            'From creative pursuits like writing and art to humanitarian activities such as volunteering and advocacy, INFJs enjoy activities that allow them to express their creativity and compassion and make a difference in the world.',
-         сompatibility:
-            'INFJs seek partners who share their values of authenticity, compassion, and personal growth. They appreciate individuals who are willing to engage in deep and meaningful conversations and who support their vision for a better world.',
-         affection:
-            'While reserved in expressing emotions, INFJs show their love through thoughtful gestures and acts of kindness. They prioritize the emotional well-being of their loved ones and strive to create meaningful connections based on mutual understanding and support.',
-      },
-      {
          type: 'ENTP',
+         color: '#f77118',
          name: 'Debater',
          about: 'ENTPs are innovative and adventurous individuals, known for their curiosity and love of debate. They are quick-witted and outgoing, valuing intellectual stimulation and exploration in all aspects of their lives. While they may appear playful, ENTPs possess a sharp intellect and a thirst for knowledge.',
          purpose:
@@ -103,6 +85,7 @@ module.exports = {
       },
       {
          type: 'ENTJ',
+         color: '#a52a2a',
          name: 'Commander',
          about: 'ENTJs are strategic and ambitious individuals, known for their leadership and determination. They are natural-born leaders who value efficiency and effectiveness in achieving their goals. While they may appear assertive, ENTJs possess a strong sense of vision and a commitment to success.',
          purpose:
@@ -130,6 +113,7 @@ module.exports = {
       },
       {
          type: 'ISTP',
+         color: '#696969',
          name: 'Virtuoso',
          about: 'ISTPs are pragmatic and resourceful individuals, known for their adaptability and problem-solving skills. They are hands-on learners who value practical experience and independence. While they may appear laid-back, ISTPs possess a keen sense of curiosity and a love of adventure.',
          purpose:
@@ -151,6 +135,7 @@ module.exports = {
       },
       {
          type: 'ISTJ',
+         color: '#4b0082',
          name: 'Logistician',
          about: 'ISTJs are reliable and responsible individuals, known for their practicality and dedication to duty. They are methodical and organized, preferring structure and stability in their lives. While they may seem reserved, ISTJs possess a strong sense of loyalty and commitment to those they care about.',
          purpose:
@@ -172,6 +157,7 @@ module.exports = {
       },
       {
          type: 'ESTP',
+         color: '#edd25c',
          name: 'Entrepreneur',
          about: 'ESTPs are energetic and action-oriented individuals, known for their spontaneity and love of adventure. They are practical problem-solvers who value excitement and experience in all aspects of their lives. While they may appear bold, ESTPs possess a keen ability to adapt to new situations and thrive in high-pressure environments.',
          purpose:
@@ -193,6 +179,7 @@ module.exports = {
       },
       {
          type: 'ESTJ',
+         color: '#8b0000',
          name: 'Executive',
          about: 'ESTJs are practical and organized individuals, known for their leadership and responsibility. They are efficient and reliable, valuing structure and tradition in their lives. While they may appear strict, ESTJs possess a strong sense of duty and a commitment to excellence.',
          purpose:
@@ -214,6 +201,7 @@ module.exports = {
       },
       {
          type: 'INFP',
+         color: '#9370db',
          name: 'Dreamer',
          about: 'INFPs are idealistic and introspective individuals, known for their creativity and compassion. They are deeply empathetic and value authenticity and sincerity in their relationships. While they may appear reserved, INFPs possess a rich inner world and a strong sense of personal values.',
          purpose:
@@ -234,7 +222,30 @@ module.exports = {
             'While reserved in expressing emotions, INFPs show their love through acts of kindness and gestures of affection. They prioritize emotional connection and shared values, enjoying moments of intimacy and closeness with their loved ones.',
       },
       {
+         type: 'INFJ',
+         color: '#86ca5f',
+         name: 'Advocate',
+         about: 'INFJs are insightful and compassionate individuals, known for their idealism and intuition. They are deeply empathetic and value authenticity and connection in their relationships. While they may appear reserved, INFJs possess a rich inner world and a strong sense of purpose.',
+         purpose:
+            'Driven by a desire to make a positive difference in the world, INFJs excel in roles that involve guiding and supporting others. They find fulfillment in helping individuals realize their potential and creating meaningful change in society.',
+         values:
+            'INFJs value authenticity and integrity, often striving to live in accordance with their deeply-held beliefs and values. They are idealistic and visionary, seeking to create a better world through their actions and ideas.',
+         jobs: ['Counselor/Psychologist', 'Writer/Author', 'Nonprofit Administrator', 'Social Worker', 'Teacher/Educator'],
+         strengths: ['Insightful', 'Compassionate', 'Idealistic', 'Intuitive', 'Empathetic', 'Creative', 'Visionary'],
+         weaknesses: ['Perfectionistic', 'Overly self-critical', 'Prone to burnout', 'Difficulty setting boundaries', 'Tendency to idealize others'],
+         catalyze:
+            'INFJs are motivated by a deep sense of purpose and a desire to make a positive impact on the world. They find fulfillment in helping others and creating meaningful connections with those around them. INFJs value authenticity, compassion, and personal growth in themselves and others.',
+         hates: "They're frustrated by injustice, insincerity, and lack of empathy. INFJs thrive in environments that value authenticity and encourage personal growth and connection.",
+         interests:
+            'From creative pursuits like writing and art to humanitarian activities such as volunteering and advocacy, INFJs enjoy activities that allow them to express their creativity and compassion and make a difference in the world.',
+         сompatibility:
+            'INFJs seek partners who share their values of authenticity, compassion, and personal growth. They appreciate individuals who are willing to engage in deep and meaningful conversations and who support their vision for a better world.',
+         affection:
+            'While reserved in expressing emotions, INFJs show their love through thoughtful gestures and acts of kindness. They prioritize the emotional well-being of their loved ones and strive to create meaningful connections based on mutual understanding and support.',
+      },
+      {
          type: 'ENFP',
+         color: '#ffa07a',
          name: 'Campaigner',
          about: 'ENFPs are enthusiastic and imaginative individuals, known for their creativity and empathy. They are free-spirited and compassionate, valuing authenticity and connection in their relationships. While they may appear spontaneous, ENFPs possess a deep sense of idealism and a passion for exploring new possibilities.',
          purpose:
@@ -262,6 +273,7 @@ module.exports = {
       },
       {
          type: 'ENFJ',
+         color: '#ff4500',
          name: 'Connector',
          about: 'ENFJs are charismatic and empathetic individuals, known for their warmth and ability to connect with others. They are natural leaders who value harmony and cooperation in their relationships. While they may appear outgoing, ENFJs possess a deep understanding of people and a commitment to helping others reach their full potential.',
          purpose:
@@ -289,6 +301,7 @@ module.exports = {
       },
       {
          type: 'ISFP',
+         color: '#b670db',
          name: 'Artist',
          about: 'ISFPs are sensitive and creative individuals, known for their artistic talent and empathy. They are free-spirited and spontaneous, valuing authenticity and self-expression in all aspects of their lives. While they may appear reserved, ISFPs possess a deep appreciation for beauty and a strong connection to their emotions.',
          purpose:
@@ -317,6 +330,7 @@ module.exports = {
       },
       {
          type: 'ISFJ',
+         color: '#800000',
          name: 'Defender',
          about: 'ISFJs are nurturing and empathetic individuals, known for their compassion and altruism. They are loyal and supportive friends, always willing to lend a helping hand. While they may avoid conflict, ISFJs possess a quiet strength and determination.',
          purpose:
@@ -344,6 +358,7 @@ module.exports = {
       },
       {
          type: 'ESFP',
+         color: '#ff69b4',
          name: 'Performer',
          about: 'ESFPs are outgoing and spontaneous individuals, known for their zest for life and love of excitement. They are energetic and sociable, valuing fun and adventure in all aspects of their lives. While they may appear carefree, ESFPs possess a strong sense of empathy and a talent for living in the moment.',
          purpose:
@@ -365,6 +380,7 @@ module.exports = {
       },
       {
          type: 'ESFJ',
+         color: '#e863ed',
          name: 'Provider',
          about: 'ESFJs are warm and nurturing individuals, known for their empathy and sociability. They are caretakers who value harmony and connection in their relationships. While they may appear outgoing, ESFJs possess a strong sense of responsibility and a commitment to caring for those around them.',
          purpose:

@@ -1,7 +1,6 @@
 import Navbar from '@/components/Navbar'
 import './globals.css'
 import Footer from '@/components/Footer'
-import Glow from '@/components/Glow'
 
 export const metadata = {
    title: 'Fancy MBTI',
@@ -22,8 +21,6 @@ export default function Layout({ children }) {
             <div className='flex flex-col min-h-screen overflow-hidden relative'>
                <Navbar />
                <div className='container mx-auto px-5 md:px-12 lg:px-16 pb-[140px] flex-1 prose max-w-full'>{children}</div>
-               <Glow className='top-[30px] md:top-0 -left-[25px] bg-primary/90' />
-               <Glow className='top-[1200px] md:top-[600px] -right-[40px] md:-right-[170px] bg-primary/90' />
                <Footer />
             </div>
          </body>

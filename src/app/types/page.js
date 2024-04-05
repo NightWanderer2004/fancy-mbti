@@ -1,8 +1,11 @@
+import Glow from '@/components/Glow'
 import MBTI from '@/components/MBTI'
 
 export default function Types() {
    return (
       <div className='pt-24 relative z-40 animate-fadeUp'>
+         <Glow className='top-[170px] scale-[1800%] md:-top-[200px] -left-[55px] bg-primary/90' />
+         <Glow className='top-[1350px] md:top-[1200px] left-[90px] md:left-[115%] bg-primary' />
          <div className='mb-16 relative'>
             <h1 className='text-5xl md:text-7xl sm:leading-tight font-aspekta font-bold mb-0'>All MBTIs</h1>
             <p className='text-base md:text-xl'>
