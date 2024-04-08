@@ -25,7 +25,7 @@ export default function Page({ params }) {
                className='top-[2060px] -left-[140px] lg:-left-[550px] opacity-50 scale-[1700%] lg:scale-[1220%]'
                style={{ backgroundColor: color }}
             />
-            <Glow className='lg:hidden -bottom-[20px] right-[60px] opacity-50 scale-[2200%] lg:scale-[1220%]' style={{ backgroundColor: color }} />
+            <Glow className='lg:hidden -bottom-[120px] right-[60px] opacity-50 scale-[2200%] lg:scale-[1220%]' style={{ backgroundColor: color }} />
 
             <svg
                className='absolute top-[90px] md:top-[80px] right-3 w-[180px] md:w-[220px] rotate-[-45deg] scale-x-[-1]'
