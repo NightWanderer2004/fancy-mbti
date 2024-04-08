@@ -27,10 +27,6 @@ export default function Footer() {
                X
             </a>
          </nav>
-         <aside>
-            {/* <Image src='/logo.png' width={64} height={64} /> */}
-            <p>© {new Date().getFullYear()} - All right reserved</p>
-         </aside>
       </footer>
    )
 }

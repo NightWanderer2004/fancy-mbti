@@ -94,13 +94,7 @@ module.exports = {
             'ENTJs value efficiency and effectiveness, often seeking out new opportunities for growth and advancement. They are strategic and decisive, preferring to take charge and lead by example rather than following established norms or traditions.',
          jobs: ['CEO/Executive Director', 'Management Consultant', 'Lawyer', 'Financial Manager', 'Politician'],
          strengths: ['Strategic', 'Ambitious', 'Determined', 'Assertive', 'Visionary', 'Decisive', 'Charismatic'],
-         weaknesses: [
-            'Impatient',
-            'Stubborn',
-            'Intolerant of incompetence',
-            'Difficulty expressing emotions',
-            'Tendency to prioritize work over relationships',
-         ],
+         weaknesses: ['Impatient', 'Stubborn', 'Intolerant of incompetence', 'Difficulty expressing emotions', 'Prioritize work over relationships'],
          catalyze:
             'ENTJs are motivated by a desire to achieve their goals and make a meaningful impact on the world. They find fulfillment in leading others and implementing innovative solutions to complex problems, often drawing inspiration from their sense of vision and determination.',
          hates: "They're frustrated by inefficiency, incompetence, and lack of ambition. ENTJs thrive in environments that value strategic thinking, effectiveness, and determination.",
@@ -286,7 +280,7 @@ module.exports = {
             'Overly self-sacrificing',
             'Prone to burnout',
             'Difficulty setting boundaries',
-            'Tendency to prioritize others needs over their own',
+            'Prioritize others needs over their own',
             'Fear of conflict',
          ],
          catalyze:

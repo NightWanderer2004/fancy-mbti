@@ -2,6 +2,8 @@
 import { openai } from '@/lib/openai'
 import { useState } from 'react'
 import Showdown from 'showdown'
+import { toast } from 'sonner'
+
 import TextareaAutosize from 'react-textarea-autosize'
 
 export default function Personalizer({ setResponse, setIsLoading, isLoading }) {
@@ -57,7 +59,6 @@ export default function Personalizer({ setResponse, setIsLoading, isLoading }) {
             max_tokens: 2500,
             stream: true,
          })
-         // Я INTP, 5w6, 593. Увлекаюсь психологией, аниме и инди-проектами(стартапами). Я веб разработчик, в основном это фронтенд и дизайн. Мне 19 лет, говорю на 4 языках
          let text = ''
          for await (const chunk of response) {
             const converter = new Showdown.Converter()
@@ -95,8 +96,9 @@ export default function Personalizer({ setResponse, setIsLoading, isLoading }) {
                <TextareaAutosize
                   minRows={2}
                   maxRows={6}
-                  maxLength={255}
+                  maxLength={320}
                   onChange={e => {
+                     if (e.target.value.length >= 320) toast.warning('Max length is 320 characters')
                      setError('')
                      setInput(e.target.value)
                   }}
