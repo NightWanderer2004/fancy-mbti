@@ -28,6 +28,8 @@ module.exports = {
             'Second-guess themselves',
             'Procrastinate',
          ],
+         howItToBe:
+            'Curious and analytical, INTPs are architects of thought. Driven by a thirst for knowledge, they love exploring abstract theories. Often lost in thought, they prefer rationality and logic over emotional considerations in most areas of life.',
          catalyze:
             'INTPs are drawn to intelligence, competence, and authenticity, engaging with those who share their philosophical and logical approach to life.',
          hates: "They're irked by manipulative, irrational, and unintelligent behavior, preferring sincere and logical interactions.",
@@ -50,6 +52,8 @@ module.exports = {
          jobs: ['Software Developer', 'Engineer (Various disciplines)', 'Research Scientist', 'Management Consultant', 'Financial Analyst'],
          strengths: ['Strategic', 'Analytical', 'Visionary', 'Independent', 'Determined', 'Efficient', 'Intelligent'],
          weaknesses: ['Stubborn', 'Arrogant', 'Impatient', 'Overly critical', 'Difficulty expressing emotions'],
+         howItToBe:
+            'Strategic and driven, INTJs view the world as a chessboard, always planning several moves ahead. They come alive when solving complex problems. Independence and intellectual growth are cherished, and they approach life with a skeptical and innovative mind.',
          catalyze:
             'INTJs are motivated by a desire to understand complex systems and create innovative solutions to problems. They find fulfillment in pushing the boundaries of what is possible and achieving their goals through strategic planning and determination.',
          hates: "They're annoyed by inefficiency, incompetence, and lack of vision. INTJs thrive in environments that value intelligence, innovation, and excellence.",
@@ -73,6 +77,8 @@ module.exports = {
          strengths: ['Innovative', 'Curious', 'Quick-witted', 'Adaptable', 'Charismatic', 'Analytical', 'Creative'],
 
          weaknesses: ['Argumentative', 'Impulsive', 'Easily bored', 'Difficulty following through on projects', 'Tendency to overlook details'],
+         howItToBe:
+            "Inventive and perceptive, ENTPs love shaking up the status quo. They thrive in debates and aren't afraid to question conventional wisdom. Their minds are always fizzing with ideas, making them dynamic problem solvers and entrepreneurs.",
          catalyze:
             'ENTPs are motivated by a desire to understand the world and uncover new possibilities. They find fulfillment in exploring diverse interests and challenging themselves to think critically and creatively, often drawing inspiration from their curiosity and love of debate.',
          hates: "They're frustrated by rigidity, close-mindedness, and lack of intellectual stimulation. ENTPs thrive in environments that value creativity, innovation, and lively debate.",
@@ -95,6 +101,8 @@ module.exports = {
          jobs: ['CEO/Executive Director', 'Management Consultant', 'Lawyer', 'Financial Manager', 'Politician'],
          strengths: ['Strategic', 'Ambitious', 'Determined', 'Assertive', 'Visionary', 'Decisive', 'Charismatic'],
          weaknesses: ['Impatient', 'Stubborn', 'Intolerant of incompetence', 'Difficulty expressing emotions', 'Prioritize work over relationships'],
+         howItToBe:
+            'Decisive and strategic, ENTJs thrive on challenge and efficiency. They are natural leaders who approach life with a clear vision and are driven to achieve their goals. Their assertive and rational mindset often propels them into positions of authority.',
          catalyze:
             'ENTJs are motivated by a desire to achieve their goals and make a meaningful impact on the world. They find fulfillment in leading others and implementing innovative solutions to complex problems, often drawing inspiration from their sense of vision and determination.',
          hates: "They're frustrated by inefficiency, incompetence, and lack of ambition. ENTJs thrive in environments that value strategic thinking, effectiveness, and determination.",
@@ -117,6 +125,8 @@ module.exports = {
          jobs: ['Mechanic', 'Carpenter', 'Electrician', 'Pilot', 'Forensic Scientist'],
          strengths: ['Resourceful', 'Adaptable', 'Practical', 'Hands-on', 'Independent', 'Analytical', 'Laid-back'],
          weaknesses: ['Impulsive', 'Risk-taking', 'Dislikes commitment', 'Unemotional', 'Difficulty expressing feelings'],
+         howItToBe:
+            'Practical and spontaneous, ISTPs shine in situations that require quick thinking and adaptability. Their fierce independence and skill with mechanical things often leads them to seek excitement through hands-on experiences and adventures.',
          catalyze:
             'ISTPs are motivated by a desire to explore new opportunities and test their limits. They find fulfillment in challenging themselves and pushing the boundaries of what is possible, often seeking out new experiences and adventures.',
          hates: "They're frustrated by rigid rules, inefficiency, and lack of practicality. ISTPs thrive in environments that value independence, creativity, and hands-on learning.",
@@ -139,6 +149,8 @@ module.exports = {
          jobs: ['Accountant', 'Financial Analyst', 'Project Manager', 'Quality Control Manager', 'Operations Manager'],
          strengths: ['Reliable', 'Responsible', 'Practical', 'Methodical', 'Organized', 'Loyal', 'Committed'],
          weaknesses: ['Stubborn', 'Rigid', 'Resistant to change', 'Judgmental', 'Overly cautious', 'Difficulty expressing emotions'],
+         howItToBe:
+            'Reliable and meticulous, ISTJs are the embodiment of tradition and order. They tackle life with a practical and methodical perspective, finding comfort in clear rules and structured environments. Their loyalty to commitments and a strong sense of responsibility flavor their personal and professional lives.',
          catalyze:
             'ISTJs are motivated by a sense of duty and responsibility, finding fulfillment in fulfilling their obligations and serving others. They value competence, reliability, and integrity in themselves and those around them.',
          hates: "They're annoyed by inefficiency, irresponsibility, and lack of respect for rules and traditions. ISTJs prefer clear expectations and logical solutions to problems.",
@@ -161,6 +173,8 @@ module.exports = {
          jobs: ['Sales Manager', 'Real Estate Agent', 'Firefighter/Paramedic', 'Athletic Coach', 'Construction Manager'],
          strengths: ['Energetic', 'Adventurous', 'Spontaneous', 'Resourceful', 'Charismatic', 'Bold', 'Pragmatic'],
          weaknesses: ['Impulsive', 'Risk-taking', 'Dislikes routine', 'Tendency to overlook consequences', 'Difficulty focusing on long-term goals'],
+         howItToBe:
+            'Energetic and action-oriented, ESTPs thrive on the thrill of the moment. Pragmatic problem-solvers, they excel in crisis situations, often tackling challenges head-on. Socially adept, they navigate the world with a bold and resourceful attitude.',
          catalyze:
             'ESTPs are motivated by a desire to experience life to the fullest and embrace new challenges. They find fulfillment in exploring their surroundings and pushing the boundaries of what is possible, often drawing inspiration from their love of excitement and spontaneity.',
          hates: "They're frustrated by boredom, routine, and lack of excitement. ESTPs thrive in environments that value spontaneity, adventure, and hands-on experience.",
@@ -183,6 +197,8 @@ module.exports = {
          jobs: ['Business Manager', 'Lawyer', 'Accountant', 'Military Officer', 'Police Officer'],
          strengths: ['Practical', 'Organized', 'Efficient', 'Reliable', 'Responsible', 'Decisive', 'Assertive'],
          weaknesses: ['Stubborn', 'Judgmental', 'Inflexible', 'Impatient', 'Difficulty expressing emotions'],
+         howItToBe:
+            'Organized and assertive, ESTJs navigate environments with a clear vision and unwavering reliability. They believe in a structured approach and often naturally step into leadership roles. Loyalty and responsibility are the bedrock of their personality.',
          catalyze:
             'ESTJs are motivated by a desire to succeed and uphold societal norms. They find fulfillment in leading others and ensuring that tasks are completed to the highest standard, often drawing inspiration from their sense of duty and responsibility.',
          hates: "They're frustrated by inefficiency, incompetence, and lack of respect for authority. ESTJs thrive in environments that value structure, discipline, and order.",
@@ -205,6 +221,8 @@ module.exports = {
          jobs: ['Writer/Author', 'Counselor/Therapist', 'Teacher/Professor', 'Social Worker', 'Graphic Designer'],
          strengths: ['Creative', 'Empathetic', 'Idealistic', 'Introspective', 'Compassionate', 'Sincere', 'Insightful'],
          weaknesses: ['Overly sensitive', 'Avoids conflict', 'Prone to idealism', 'Difficulty making decisions', 'Tendency to internalize emotions'],
+         howItToBe:
+            'Dreamy and compassionate, INFPs hold their ideals and values close to their heart. They often feel misunderstood and seek to express their inner emotions through creative outlets. Life is a quest for meaning, and personal integrity is non-negotiable.',
          catalyze:
             'INFPs are motivated by a desire to express themselves authentically and make a positive impact on the world. They find fulfillment in creating beauty and meaning through their creativity and compassion, often drawing inspiration from their emotions and personal experiences.',
          hates: "They're frustrated by inauthenticity, insensitivity, and lack of empathy. INFPs thrive in environments that value creativity, compassion, and personal growth.",
@@ -227,6 +245,8 @@ module.exports = {
          jobs: ['Counselor/Psychologist', 'Writer/Author', 'Nonprofit Administrator', 'Social Worker', 'Teacher/Educator'],
          strengths: ['Insightful', 'Compassionate', 'Idealistic', 'Intuitive', 'Empathetic', 'Creative', 'Visionary'],
          weaknesses: ['Perfectionistic', 'Overly self-critical', 'Prone to burnout', 'Difficulty setting boundaries', 'Tendency to idealize others'],
+         howItToBe:
+            'Insightful and idealistic, INFJs are on a quest for deeper meaning in everything around them. Guided by their values and a vision for a better world, they often feel the weight of wanting to make a significant impact. Their inner life is a colorful tapestry of complexities and intuition.',
          catalyze:
             'INFJs are motivated by a deep sense of purpose and a desire to make a positive impact on the world. They find fulfillment in helping others and creating meaningful connections with those around them. INFJs value authenticity, compassion, and personal growth in themselves and others.',
          hates: "They're frustrated by injustice, insincerity, and lack of empathy. INFJs thrive in environments that value authenticity and encourage personal growth and connection.",
@@ -255,6 +275,8 @@ module.exports = {
             'Tendency to overlook details',
             'Fear of missing out',
          ],
+         howItToBe:
+            'Enthusiastic and imaginative, ENFPs are captivated by possibilities. They see life as a big, complex puzzle where everything is interconnected. Their energy is infectious, and their optimism often inspires others to chase their dreams.',
          catalyze:
             'ENFPs are motivated by a desire to inspire others and make a positive impact on the world. They find fulfillment in exploring new ideas and bringing their creative vision to life, often drawing inspiration from their intuition and empathy.',
          hates: "They're frustrated by conformity, lack of authenticity, and lack of emotional depth. ENFPs thrive in environments that value creativity, individuality, and emotional connection.",
@@ -283,6 +305,8 @@ module.exports = {
             'Prioritize others needs over their own',
             'Fear of conflict',
          ],
+         howItToBe:
+            'Charismatic and empathetic, ENFJs are natural leaders who strive to understand and inspire others. They are attuned to the needs of those around them and find motivation in facilitating growth and positive change.',
          catalyze:
             'ENFJs are motivated by a desire to inspire and empower others to reach their full potential. They find fulfillment in creating positive change and fostering personal growth and development, often drawing inspiration from their empathy and compassion.',
          hates: "They're frustrated by conflict, insensitivity, and lack of empathy. ENFJs thrive in environments that value harmony, cooperation, and personal growth.",
@@ -312,6 +336,8 @@ module.exports = {
             'Fear of rejection',
             'Indecisive',
          ],
+         howItToBe:
+            "Artistic and sensitive, ISFPs live in the moment and stay true to themselves. They express their inner world through their artistic endeavors and find beauty in life's simple aspects. They seek harmony and often display a gentle, accommodating nature.",
          catalyze:
             'ISFPs are motivated by a desire to express themselves and connect with others through art and personal expression. They find fulfillment in creating beauty and meaning in the world, often drawing inspiration from their emotions and experiences.',
          hates: "They're frustrated by inauthenticity, insensitivity, and lack of appreciation for beauty. ISFPs thrive in environments that value creativity, empathy, and personal expression.",
@@ -340,6 +366,8 @@ module.exports = {
             'Prone to overwork',
             'Reluctant to express personal needs',
          ],
+         howItToBe:
+            "Caring and considerate, ISFJs serve as the quiet pillars of their communities. They are deeply devoted to the well-being of others, frequently putting others' needs before their own. They prioritize stability and harmony in their relationships and find joy in helping others.",
          catalyze:
             'ISFJs are motivated by a strong sense of duty and responsibility, finding fulfillment in serving others and making a positive impact on their communities. They value kindness, compassion, and generosity in themselves and those around them.',
          hates: "They're irked by selfishness, insensitivity, and lack of appreciation for their efforts. ISFJs thrive in environments that value empathy and cooperation.",
@@ -362,6 +390,8 @@ module.exports = {
          jobs: ['Actor/Actress', 'Event Planner', 'Personal Trainer', 'Tour Guide', 'Social Media Influencer'],
          strengths: ['Energetic', 'Spontaneous', 'Empathetic', 'Sociable', 'Charismatic', 'Fun-loving', 'Adventurous'],
          weaknesses: ['Impulsive', 'Easily bored', 'Difficulty planning for the future', 'Tendency to avoid conflict', 'Fear of missing out'],
+         howItToBe:
+            'Vibrant and spontaneous, ESFPs love the spotlight and make life a celebration. They are attuned to their surroundings and are experts at reading others, making them natural entertainers. Life is all about enjoyment, and they make sure everyone around them feels the same way.',
          catalyze:
             'ESFPs are motivated by a desire to experience life to the fullest and embrace new opportunities for excitement and adventure. They find fulfillment in connecting with others and living in the moment, often drawing inspiration from their spontaneity and love of fun.',
          hates: "They're frustrated by routine, lack of excitement, and lack of emotional depth. ESFPs thrive in environments that value creativity, spontaneity, and emotional connection.",
@@ -390,6 +420,8 @@ module.exports = {
             'Tendency to avoid conflict',
             'Difficulty setting boundaries',
          ],
+         howItToBe:
+            'Warm and caring, ESFJs are the social glue that binds communities together. They excel in roles that allow them to support and harmonize groups. Their need for social interaction and a structured environment fuels their actions.',
          catalyze:
             'ESFJs are motivated by a desire to create harmonious relationships and support those in need. They find fulfillment in caring for others and ensuring that everyone feels included and valued, often drawing inspiration from their empathy and compassion.',
          hates: "They're frustrated by conflict, insensitivity, and lack of consideration for others. ESFJs thrive in environments that value cooperation, empathy, and generosity.",
@@ -402,14 +434,15 @@ module.exports = {
       },
    ],
    headers: {
-      purpose: 'Their life purpose:',
-      values: 'They value:',
-      jobs: 'They are likely to be:',
+      purpose: 'Their life purpose',
+      values: 'They value',
+      jobs: 'They are likely to be',
       strengths: 'Strengths',
       weaknesses: 'Weaknesses',
+      howItToBe: 'How it is to be them?',
       catalyze: 'What catalyze their drive?',
-      hates: 'Things That Annoy Them:',
-      interests: 'Their common interests:',
+      hates: 'Things That Annoy Them',
+      interests: 'Their common interests',
       сompatibility: 'Who they want to find?',
       affection: 'How they show affection?',
    },

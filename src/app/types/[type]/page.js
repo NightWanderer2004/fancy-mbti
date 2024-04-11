@@ -11,7 +11,7 @@ export default function Page({ params }) {
 
    return (
       <>
-         <div className='w-screen h-screen fixed top-0 left-0 opacity-5' style={{ backgroundColor: color }}></div>
+         <div className='w-screen h-screen fixed top-0 left-0 opacity-[0.03]' style={{ backgroundColor: color }}></div>
          <div className='pt-24 relative z-40 animate-fadeUp max-w-2xl mx-auto'>
             <Glow
                className='top-[40px] lg:top-[100px] left-0 lg:-left-[470px] opacity-35 scale-[1550%] lg:scale-[1220%]'
@@ -58,8 +58,10 @@ export default function Page({ params }) {
                   {info.name}
                </p>
             </div>
-            <p>{info.about}</p>
-            <div className='flex flex-col gap-3'>
+            <p className='rounded-xl p-3 shadow-sm' style={{ backgroundColor: `${color}0c` }}>
+               {info.about}
+            </p>
+            <div className='flex flex-col gap-4'>
                {Object.keys(info)
                   .slice(4)
                   .map((item, index) => (
