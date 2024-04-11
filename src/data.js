@@ -91,7 +91,7 @@ module.exports = {
       },
       {
          type: 'ENTJ',
-         color: '#a52a2a',
+         color: '#1E1818',
          name: 'Commander',
          about: 'ENTJs are strategic and ambitious individuals, known for their leadership and determination. They are natural-born leaders who value efficiency and effectiveness in achieving their goals. While they may appear assertive, ENTJs possess a strong sense of vision and a commitment to success.',
          purpose:
@@ -139,7 +139,7 @@ module.exports = {
       },
       {
          type: 'ISTJ',
-         color: '#4b0082',
+         color: '#4b7095',
          name: 'Logistician',
          about: 'ISTJs are reliable and responsible individuals, known for their practicality and dedication to duty. They are methodical and organized, preferring structure and stability in their lives. While they may seem reserved, ISTJs possess a strong sense of loyalty and commitment to those they care about.',
          purpose:
@@ -163,7 +163,7 @@ module.exports = {
       },
       {
          type: 'ESTP',
-         color: '#edd25c',
+         color: '#bb2219',
          name: 'Entrepreneur',
          about: 'ESTPs are energetic and action-oriented individuals, known for their spontaneity and love of adventure. They are practical problem-solvers who value excitement and experience in all aspects of their lives. While they may appear bold, ESTPs possess a keen ability to adapt to new situations and thrive in high-pressure environments.',
          purpose:
@@ -187,7 +187,7 @@ module.exports = {
       },
       {
          type: 'ESTJ',
-         color: '#8b0000',
+         color: '#c0d0e8',
          name: 'Executive',
          about: 'ESTJs are practical and organized individuals, known for their leadership and responsibility. They are efficient and reliable, valuing structure and tradition in their lives. While they may appear strict, ESTJs possess a strong sense of duty and a commitment to excellence.',
          purpose:
@@ -259,7 +259,7 @@ module.exports = {
       },
       {
          type: 'ENFP',
-         color: '#ffa07a',
+         color: '#f07f14',
          name: 'Campaigner',
          about: 'ENFPs are enthusiastic and imaginative individuals, known for their creativity and empathy. They are free-spirited and compassionate, valuing authenticity and connection in their relationships. While they may appear spontaneous, ENFPs possess a deep sense of idealism and a passion for exploring new possibilities.',
          purpose:
@@ -289,7 +289,7 @@ module.exports = {
       },
       {
          type: 'ENFJ',
-         color: '#ff4500',
+         color: '#578748',
          name: 'Connector',
          about: 'ENFJs are charismatic and empathetic individuals, known for their warmth and ability to connect with others. They are natural leaders who value harmony and cooperation in their relationships. While they may appear outgoing, ENFJs possess a deep understanding of people and a commitment to helping others reach their full potential.',
          purpose:
@@ -350,7 +350,7 @@ module.exports = {
       },
       {
          type: 'ISFJ',
-         color: '#800000',
+         color: '#948fa9',
          name: 'Defender',
          about: 'ISFJs are nurturing and empathetic individuals, known for their compassion and altruism. They are loyal and supportive friends, always willing to lend a helping hand. While they may avoid conflict, ISFJs possess a quiet strength and determination.',
          purpose:
@@ -380,7 +380,7 @@ module.exports = {
       },
       {
          type: 'ESFP',
-         color: '#ff69b4',
+         color: '#f7aa3b',
          name: 'Performer',
          about: 'ESFPs are outgoing and spontaneous individuals, known for their zest for life and love of excitement. They are energetic and sociable, valuing fun and adventure in all aspects of their lives. While they may appear carefree, ESFPs possess a strong sense of empathy and a talent for living in the moment.',
          purpose:
@@ -404,7 +404,7 @@ module.exports = {
       },
       {
          type: 'ESFJ',
-         color: '#e863ed',
+         color: '#7a4b62',
          name: 'Provider',
          about: 'ESFJs are warm and nurturing individuals, known for their empathy and sociability. They are caretakers who value harmony and connection in their relationships. While they may appear outgoing, ESFJs possess a strong sense of responsibility and a commitment to caring for those around them.',
          purpose:
