@@ -4,7 +4,7 @@ export default function TypeSection({ heading, content, type, color }) {
    if (contrastTypes.includes(type)) isContrast = true
 
    return (
-      <div className='rounded-xl p-3 shadow-sm' style={{ backgroundColor: `${color}0c` }}>
+      <div className='rounded-xl h-auto p-3 shadow-sm' style={{ backgroundColor: `${color}0c` }}>
          <h3 className='text-2xl opacity-85 mt-3 font-aspekta first-letter:uppercase'>{heading}</h3>
          {Array.isArray(content) ? (
             <div className='flex flex-wrap gap-3'>

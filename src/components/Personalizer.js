@@ -76,13 +76,13 @@ export default function Personalizer({ setResponse, setIsLoading, isLoading }) {
    }
 
    return (
-      <div id='personalizer' className='pt-24 md:pt-0 relative z-30'>
-         <div className='relative py-8'>
-            <div className='bg-base-200/20 absolute top-0 -left-5 w-screen md:w-[114%] h-full -z-20 rounded-2xl'></div>
+      <div id='personalizer' className='pt-24 sm:pt-0 relative z-30'>
+         <div className='relative py-8 sm:pr-5'>
+            <div className='bg-base-200/20 absolute top-0 -left-5 w-screen sm:w-[107%] md:w-[105%] lg:w-[103%] h-full -z-20 rounded-2xl'></div>
             <h1 className='font-aspekta font-semibold md:text-3xl mt-0 mb-3'>
                Realize your potential with <span className='text-primary'>AI</span>
             </h1>
-            <p className='mt-0 leading-relaxed max-w-md md:max-w-lg'>
+            <p className='mt-0 leading-relaxed max-w-md md:max-w-lg sm:pb-5 md:pb-2'>
                Just type your <span className='text-primary font-medium font-aspekta'>MBTI</span>, maybe{' '}
                <span className='text-primary font-medium font-aspekta'>hobbies</span> or your{' '}
                <span className='text-primary font-medium font-aspekta'>profession</span>,{' '}
@@ -91,7 +91,7 @@ export default function Personalizer({ setResponse, setIsLoading, isLoading }) {
             </p>
             <form
                onSubmit={handleSubmit}
-               className='relative bg-transparent flex items-start border-b-2 border-primary/50 pb-2 mt-12 sm:mt-8 md:mt-12 xl:mt-8'
+               className='relative bg-transparent flex items-start justify-between border-b-2 border-primary/50 pb-2 mt-12 sm:mt-8 md:mt-12 xl:mt-8'
             >
                <TextareaAutosize
                   minRows={2}
@@ -103,7 +103,7 @@ export default function Personalizer({ setResponse, setIsLoading, isLoading }) {
                      setInput(e.target.value)
                   }}
                   value={input}
-                  className={`w-full bg-transparent ${
+                  className={`flex-1 pr-1 bg-transparent ${
                      error ? 'placeholder:text-error' : 'text-neutral'
                   } text-lg font-aspekta leading-normal resize-none outline-none`}
                   placeholder={
@@ -112,9 +112,9 @@ export default function Personalizer({ setResponse, setIsLoading, isLoading }) {
                         : `I'm INTJ, Professor in the university. Enjoy reading romances and traveling. Speak English and Japanese, I'm 30 y.o.`
                   }
                />
-               <button className='btn btn-accent rounded-full w-12 relative top-2' disabled={isLoading}>
+               <button className='bg-accent rounded-full flex items-center justify-center p-0 w-12 h-12 relative top-2' disabled={isLoading}>
                   <svg
-                     className='scale-[200%] transition-transform'
+                     className='scale-[180%] transition-transform'
                      width='24'
                      height='24'
                      viewBox='0 0 24 24'
@@ -136,7 +136,7 @@ export default function Personalizer({ setResponse, setIsLoading, isLoading }) {
                   </svg>
                </button>
                <svg
-                  className='absolute -top-[75px] right-10 rotate-[35deg] w-[160px] pointer-events-none'
+                  className='absolute -top-[80px] right-10 rotate-[35deg] w-[160px] pointer-events-none'
                   width='253'
                   height='119'
                   viewBox='0 0 253 119'

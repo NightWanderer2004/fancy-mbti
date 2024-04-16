@@ -12,7 +12,7 @@ export default function Home() {
    return (
       <div className='relative'>
          <Toaster position='bottom-right' richColors />
-         <div className='md:flex gap-10 lg:gap-14 xl:gap-16 items-center justify-center animate-fadeUp z-20 relative'>
+         <div className='sm:grid sm:grid-cols-2 gap-10 lg:gap-14 xl:gap-16 items-center animate-fadeUp z-20 relative'>
             <Hero />
             <Personalizer setResponse={setResponse} setIsLoading={setIsLoading} isLoading={isLoading} />
          </div>
