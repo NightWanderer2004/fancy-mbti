@@ -4,5 +4,5 @@ export const metadata = {
 }
 
 export default function TypesLayout({ children }) {
-   return <div className='md:px-12 lg:px-16'>{children}</div>
+   return <div className='container mx-auto md:px-12'>{children}</div>
 }

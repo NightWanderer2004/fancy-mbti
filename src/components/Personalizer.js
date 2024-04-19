@@ -76,7 +76,7 @@ export default function Personalizer({ setResponse, setIsLoading, isLoading }) {
    }
 
    return (
-      <div id='personalizer' className='pt-24 sm:pt-0 relative z-30'>
+      <div id='personalizer' className='pt-24 sm:pt-0 relative z-30 max-w-2xl'>
          <div className='relative py-8 sm:pr-5'>
             <div className='bg-base-200/20 absolute top-0 -left-5 w-screen sm:w-[107%] md:w-[105%] lg:w-[103%] h-full -z-20 rounded-2xl'></div>
             <h1 className='font-aspekta font-semibold md:text-3xl mt-0 mb-3'>
