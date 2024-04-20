@@ -3,7 +3,7 @@ module.exports = {
       {
          type: 'INTP',
          color: '#708090',
-         name: 'Logician',
+         name: 'Thinker',
          about: 'INTPs are the quintessential philosophers and independent thinkers. Logical, objective, and open-minded, they thrive on imagination and originality. They value honesty and often deliver thoughts with no filter, which can lead to misunderstood interactions. Despite appearing aloof, INTPs possess an intensely loving and loyal heart, though they may struggle to express emotions conventionally.',
          purpose:
             'Driven by intellectual curiosity, INTPs constantly seek knowledge and solutions to societal issues. They are dissatisfied with the status quo and strive for improvement, contributing to advancements in various fields like math, physics, and philosophy.',
@@ -43,7 +43,7 @@ module.exports = {
       {
          type: 'INTJ',
          color: '#2f4f4f',
-         name: 'Architect',
+         name: 'Mastermind',
          about: 'INTJs are strategic and analytical individuals, known for their intelligence and vision. They are independent thinkers who value efficiency and excellence in all aspects of their lives. While they may appear aloof, INTJs possess a deep sense of purpose and determination.',
          purpose:
             'Driven by a desire to understand the world and create meaningful change, INTJs excel in roles that involve strategic planning and problem-solving. They find fulfillment in pushing boundaries and challenging the status quo, striving for excellence in everything they do.',
@@ -67,7 +67,7 @@ module.exports = {
       {
          type: 'ENTP',
          color: '#f77118',
-         name: 'Debater',
+         name: 'Visionary',
          about: 'ENTPs are innovative and adventurous individuals, known for their curiosity and love of debate. They are quick-witted and outgoing, valuing intellectual stimulation and exploration in all aspects of their lives. While they may appear playful, ENTPs possess a sharp intellect and a thirst for knowledge.',
          purpose:
             'Driven by a desire to understand the world and challenge conventional thinking, ENTPs excel in roles that involve creativity and problem-solving. They find fulfillment in exploring new ideas and pushing the boundaries of what is possible, often drawing inspiration from their curiosity and adaptability.',
@@ -116,7 +116,7 @@ module.exports = {
       {
          type: 'ISTP',
          color: '#696969',
-         name: 'Virtuoso',
+         name: 'Craftsman',
          about: 'ISTPs are pragmatic and resourceful individuals, known for their adaptability and problem-solving skills. They are hands-on learners who value practical experience and independence. While they may appear laid-back, ISTPs possess a keen sense of curiosity and a love of adventure.',
          purpose:
             'Driven by a desire to understand how things work and explore new opportunities, ISTPs excel in roles that involve hands-on learning and problem-solving. They find fulfillment in challenging themselves and pushing the boundaries of what is possible.',
@@ -140,7 +140,7 @@ module.exports = {
       {
          type: 'ISTJ',
          color: '#4b7095',
-         name: 'Logistician',
+         name: 'Inspector',
          about: 'ISTJs are reliable and responsible individuals, known for their practicality and dedication to duty. They are methodical and organized, preferring structure and stability in their lives. While they may seem reserved, ISTJs possess a strong sense of loyalty and commitment to those they care about.',
          purpose:
             'Driven by a desire for stability and security, ISTJs excel in roles that require attention to detail and adherence to established procedures. They find fulfillment in preserving traditions and maintaining order in their personal and professional lives.',
@@ -164,7 +164,7 @@ module.exports = {
       {
          type: 'ESTP',
          color: '#bb2219',
-         name: 'Entrepreneur',
+         name: 'Adventurer',
          about: 'ESTPs are energetic and action-oriented individuals, known for their spontaneity and love of adventure. They are practical problem-solvers who value excitement and experience in all aspects of their lives. While they may appear bold, ESTPs possess a keen ability to adapt to new situations and thrive in high-pressure environments.',
          purpose:
             'Driven by a desire to live life to the fullest and embrace new opportunities, ESTPs excel in roles that involve hands-on experience and quick thinking. They find fulfillment in exploring the world around them and seizing the moment, often drawing inspiration from their spontaneity and resourcefulness.',
@@ -188,7 +188,7 @@ module.exports = {
       {
          type: 'ESTJ',
          color: '#c0d0e8',
-         name: 'Executer',
+         name: 'Supervisor',
          about: 'ESTJs are practical and organized individuals, known for their leadership and responsibility. They are efficient and reliable, valuing structure and tradition in their lives. While they may appear strict, ESTJs possess a strong sense of duty and a commitment to excellence.',
          purpose:
             'Driven by a desire to achieve their goals and uphold societal norms, ESTJs excel in roles that involve leadership and organization. They find fulfillment in guiding others and ensuring that tasks are completed efficiently and effectively.',
@@ -236,7 +236,7 @@ module.exports = {
       {
          type: 'INFJ',
          color: '#86ca5f',
-         name: 'Advocate',
+         name: 'Protector',
          about: 'INFJs are insightful and compassionate individuals, known for their idealism and intuition. They are deeply empathetic and value authenticity and connection in their relationships. While they may appear reserved, INFJs possess a rich inner world and a strong sense of purpose.',
          purpose:
             'Driven by a desire to make a positive difference in the world, INFJs excel in roles that involve guiding and supporting others. They find fulfillment in helping individuals realize their potential and creating meaningful change in society.',
@@ -260,7 +260,7 @@ module.exports = {
       {
          type: 'ENFP',
          color: '#f07f14',
-         name: 'Campaigner',
+         name: 'Inspirer',
          about: 'ENFPs are enthusiastic and imaginative individuals, known for their creativity and empathy. They are free-spirited and compassionate, valuing authenticity and connection in their relationships. While they may appear spontaneous, ENFPs possess a deep sense of idealism and a passion for exploring new possibilities.',
          purpose:
             'Driven by a desire to make a positive impact on the world and connect with others on a deeper level, ENFPs excel in roles that involve creativity and personal growth. They find fulfillment in inspiring others and bringing their ideas to life, often drawing inspiration from their intuition and empathy.',
@@ -290,7 +290,7 @@ module.exports = {
       {
          type: 'ENFJ',
          color: '#578748',
-         name: 'Connector',
+         name: 'Giver',
          about: 'ENFJs are charismatic and empathetic individuals, known for their warmth and ability to connect with others. They are natural leaders who value harmony and cooperation in their relationships. While they may appear outgoing, ENFJs possess a deep understanding of people and a commitment to helping others reach their full potential.',
          purpose:
             'Driven by a desire to make a positive difference in the world and support those in need, ENFJs excel in roles that involve mentoring and guiding others. They find fulfillment in creating meaningful connections and fostering personal growth and development in those around them.',
@@ -351,7 +351,7 @@ module.exports = {
       {
          type: 'ISFJ',
          color: '#948fa9',
-         name: 'Defender',
+         name: 'Nurturer',
          about: 'ISFJs are nurturing and empathetic individuals, known for their compassion and altruism. They are loyal and supportive friends, always willing to lend a helping hand. While they may avoid conflict, ISFJs possess a quiet strength and determination.',
          purpose:
             'Driven by a desire to help those in need, ISFJs excel in roles that involve caregiving and support. They find fulfillment in making a positive difference in the lives of others and creating harmony in their communities.',
@@ -405,7 +405,7 @@ module.exports = {
       {
          type: 'ESFJ',
          color: '#7a4b62',
-         name: 'Provider',
+         name: 'Caregiver',
          about: 'ESFJs are warm and nurturing individuals, known for their empathy and sociability. They are caretakers who value harmony and connection in their relationships. While they may appear outgoing, ESFJs possess a strong sense of responsibility and a commitment to caring for those around them.',
          purpose:
             'Driven by a desire to support and nurture others, ESFJs excel in roles that involve caregiving and community building. They find fulfillment in creating harmonious relationships and ensuring that the needs of those around them are met.',
