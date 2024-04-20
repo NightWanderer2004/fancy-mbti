@@ -58,7 +58,7 @@ Entertainment Recommendations:
 
 You will analyze my potential based on my MBTI personality type, hobbies, profession, and age. You will highlight beneficial areas for my development and areas strongly to avoid. You will reveal hidden aspects of my personality, apply my strengths for well-being, and address any inherent problems, offering solutions.
 
-The answer will be in '.md' format.
+The answer will be in '.md' format but don't use backticks.
 Depending on the personal information input language, the answer should be in the same language (IT'S VERY IMPORTANT!)`,
                   },
                   { role: 'user', content: `"""${input}"""` },
@@ -129,7 +129,7 @@ Depending on the personal information input language, the answer should be in th
                   }
                />
                <button className='bg-accent btn rounded-full p-0 w-12 h-12 relative top-2' disabled={isLoading}>
-                  <svg className='transition-transform' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='currentColor'>
+                  <svg className='transition-transform relative z-40' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='currentColor'>
                      <path
                         className='fill-base-100'
                         d='M12 11V8L16 12L12 16V13H8V11H12ZM12 2C17.52 2 22 6.48 22 12C22 17.52 17.52 22 12 22C6.48 22 2 17.52 2 12C2 6.48 6.48 2 12 2ZM12 20C16.42 20 20 16.42 20 12C20 7.58 16.42 4 12 4C7.58 4 4 7.58 4 12C4 16.42 7.58 20 12 20Z'
