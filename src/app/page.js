@@ -1,4 +1,5 @@
 'use client'
+import ClearResponse from '@/components/ClearResponse'
 import Glow from '@/components/Glow'
 import Hero from '@/components/Hero'
 import Personalizer from '@/components/Personalizer'
@@ -15,6 +16,11 @@ export default function Home() {
       if (prevResponse) setResponse(prevResponse)
    }, [])
 
+   const handleClear = () => {
+      setResponse('')
+      localStorage.removeItem('response')
+   }
+
    return (
       <div className='relative'>
          <Toaster position='bottom-right' richColors />
@@ -23,6 +29,7 @@ export default function Home() {
             <Personalizer setResponse={setResponse} setIsLoading={setIsLoading} isLoading={isLoading} />
          </div>
          <Response response={response} isLoading={isLoading} />
+         {response && <ClearResponse handleClear={handleClear} isLoading={isLoading} />}
          <Glow className='top-[30px] md:top-0 -left-[25px] bg-primary/90' />
          <Glow className='top-[1200px] md:top-[600px] -right-[40px] md:-right-[170px] bg-primary/90' />
       </div>

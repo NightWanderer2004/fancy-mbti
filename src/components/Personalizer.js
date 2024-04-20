@@ -28,61 +28,68 @@ export default function Personalizer({ setResponse, setIsLoading, isLoading }) {
       setError('')
       setResponse('')
 
-      const generateText = async () => {
-         const prompt = `
-         Create an instruction for me on how to boost my personality and use my natural strengths.
+      try {
+         const generateText = async () => {
+            const response = await openai.chat.completions.create({
+               messages: [
+                  {
+                     role: 'system',
+                     content: `Being a MBTI and psychology expert, create an instruction for me on how to boost my personality and use my natural strengths based on my data that I provide you in triple quotes. Answer in a friendly and open style. Explain how and why my interests can be related to each other.
 
-         Matching Function:
-         - Develop an algorithm that suggests me with compatible MBTI types for communication or cooperation based on the user's MBTI type. This will help me find like-minded individuals and project partners.
+Matching Function:
+- Develop an algorithm that suggests me with compatible MBTI types for communication or cooperation based on the user's MBTI type. This will help me find like-minded individuals and project partners based on MBTI.
 
-         Communication Trainрing:
-         - Create an educational function that helps me develop effective methods of communication with different MBTI personality types. Include advice on adjusting communication style to match the preferences of the conversation partner.
+Communication Trainрing:
+- Create an educational function that helps me develop effective methods of communication with different MBTI types. Include advice on adjusting communication style to match the preferences of the conversation partner.
 
-         Self-Discovery Tool:
-         - Develop a tool that uses information about the mine MBTI type to suggest individualized strategies for personal growth and development. This could include recommendations for improving weaknesses and strengthening personality strengths.
+Self-Discovery Tool:
+- Using information about the mine MBTI type to suggest personal strategies for personal growth and development. This could include recommendations for improving weaknesses and strengthening personality strengths.
 
-         Communication Styles Analysis:
-         - Create a function that analyzes the communication styles of different MBTI types and offers me advice on improving their interpersonal interactions. This will help me better understand habitual behavior patterns and find ways to improve my communication skills.
+Career Recommendations:
+- Create a function that provides specialised career recommendations based on the my MBTI type and my own preferences. I would get recommendations about professions that match my unique skills, interests, helping me make more informed career decisions.
 
-         Career Recommendations:
-         - Create a function that provides specialized career recommendations based on the my MBTI type. I would get recommendations about professions that match my unique skills, interests, and preferences, helping me make more informed career decisions.
+Relationship Recommendations:
+ - Develop a function that uses my MBTI type to suggest compatible types for relationships. This tool will not only consider romantic relationships, but also friendships. It will evaluate the potential dynamics between me and others, highlighting the strengths and potential challenges of these pairings.
 
-         Relationship Recommendations:
-         - Develop a function that uses my MBTI type to suggest compatible types for relationships. This tool will not only consider romantic relationships, but also friendships, work partnerships, and other interpersonal connections. It will evaluate the potential dynamics between my type and others, highlighting the strengths and potential challenges of these pairings. This will provide a guide on which personality types you naturally get along with and why, allowing you to cultivate more fulfilling relationships in all areas of your life.
+Entertainment Recommendations:
+- Based on my MBTI type, suggest suitable games that align with my personality traits. This will help me engage in activities that will be both entertaining and beneficial for my personal growth.
+- Provide music recommendations that suit my mood and personality type. This could be a curated playlist that captures the essence of my MBTI type.
+- Offer art recommendations, including visual arts, literature, movies, and theater that resonate with my MBTI personality type.
 
-         You will uncover and analyze my potential, considering such data as: my MBTI personality type, my hobbies and interests, my profession, the languages I master, and my age. You will elaborate on what will be useful for my development, and how I can achieve comfort and harmony. You will indicate the areas I should avoid and why they may harm m. You will shed light on the most hidden corners of my personality and show where I can apply my strengths in the real world to achieve happiness. The answer will be in '.md' format. It will fill me with energy, confidence and let me understand what is really important for my inner peace. You will also try to identify certain problems that may be inherent to me, and tell me how to solve them.
+You will analyze my potential based on my MBTI personality type, hobbies, profession, and age. You will highlight beneficial areas for my development and areas strongly to avoid. You will reveal hidden aspects of my personality, apply my strengths for well-being, and address any inherent problems, offering solutions.
 
-         I want the answer to be in an informative style and truly reveal my personality, I want to learn as much as possible about myself!
+The answer will be in '.md' format.
+Depending on the personal information input language, the answer should be in the same language (IT'S VERY IMPORTANT!)`,
+                  },
+                  { role: 'user', content: `"""${input}"""` },
+               ],
+               model: 'gpt-3.5-turbo-0125',
+               temperature: 1.35,
+               max_tokens: 2000,
+               stream: true,
+            })
+            let text = ''
+            let html = ''
+            for await (const chunk of response) {
+               const converter = new Showdown.Converter()
+               const [choice] = chunk.choices
+               const { content } = choice.delta
+               content && (text += content)
+               html = converter.makeHtml(text)
+               setResponse(html)
+            }
 
-         If data is not about this topic, please return <h2 className="text-center">Your request is not related to the topic, try again!</h2>. But if it's all right, you can start!
-         Depending on the data input language, the answer should be in the same language (IT'S VERY IMPORTANT!).
-
-         Here is my data: ${input}`
-
-         const response = await openai.chat.completions.create({
-            messages: [{ role: 'system', content: prompt }],
-            model: 'gpt-3.5-turbo-0125',
-            temperature: 1.2,
-            max_tokens: 2500,
-            stream: true,
-         })
-         let text = ''
-         let html = ''
-         for await (const chunk of response) {
-            const converter = new Showdown.Converter()
-            const [choice] = chunk.choices
-            const { content } = choice.delta
-            content && (text += content)
-            html = converter.makeHtml(text)
-            setResponse(html)
+            setIsLoading(false)
+            localStorage.setItem('response', response == 'Your request is not related to the topic, try again!' ? '' : html)
          }
 
+         generateText()
+         toast.success('Your last response will be saved')
+      } catch (error) {
+         console.error(error)
+         toast.error('An error occurred while generating the text')
          setIsLoading(false)
-         localStorage.setItem('response', response == 'Your request is not related to the topic, try again!' ? '' : html)
       }
-
-      generateText()
-      toast.success('Your last response will be saved')
    }
 
    return (
@@ -96,7 +103,6 @@ export default function Personalizer({ setResponse, setIsLoading, isLoading }) {
                Just type your <span className='text-primary font-medium font-aspekta'>MBTI</span>, maybe{' '}
                <span className='text-primary font-medium font-aspekta'>hobbies</span> or your{' '}
                <span className='text-primary font-medium font-aspekta'>profession</span>,{' '}
-               <span className='text-primary font-medium font-aspekta'>language</span> you speak,{' '}
                <span className='text-primary font-medium font-aspekta'>age</span>
             </p>
             <form

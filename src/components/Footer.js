@@ -27,6 +27,7 @@ export default function Footer() {
                X
             </a>
          </nav>
+         <p className='text-center text-accent'>All personal information on this site is not stored and kept private</p>
       </footer>
    )
 }
