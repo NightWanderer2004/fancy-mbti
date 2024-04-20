@@ -1,5 +1,5 @@
 export default function TypeSection({ heading, content, type, color }) {
-   const contrastTypes = ['INFJ', 'ESFP', 'ESTJ']
+   const contrastTypes = ['INFJ', 'ESTJ', 'ISFJ']
    let isContrast = false
    if (contrastTypes.includes(type)) isContrast = true
 
@@ -10,7 +10,7 @@ export default function TypeSection({ heading, content, type, color }) {
             <div className='flex flex-wrap gap-3'>
                {content.map((el, index) => (
                   <span key={index} className='rounded-lg text-lg py-0.5 px-3 text-white' style={{ backgroundColor: `${color}59` }}>
-                     <span className={`${isContrast ? 'text-white drop-shadow-lg' : ''}`}>{el}</span>
+                     <span className={`${isContrast ? 'text-neutral' : ''}`}>{el}</span>
                   </span>
                ))}
             </div>

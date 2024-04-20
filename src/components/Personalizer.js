@@ -1,6 +1,6 @@
 'use client'
 import { openai } from '@/lib/openai'
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import Showdown from 'showdown'
 import { toast } from 'sonner'
 
@@ -10,12 +10,19 @@ export default function Personalizer({ setResponse, setIsLoading, isLoading }) {
    const [input, setInput] = useState('')
    const [error, setError] = useState('')
 
+   useEffect(() => {
+      const prevInput = localStorage.getItem('input')
+      if (prevInput) setInput(prevInput)
+   }, [])
+
    const handleSubmit = async e => {
       e.preventDefault()
       if (input.trim() == '') {
          setError('Please enter your data')
          return
       }
+
+      localStorage.setItem('input', input)
 
       setIsLoading(true)
       setError('')
@@ -60,19 +67,22 @@ export default function Personalizer({ setResponse, setIsLoading, isLoading }) {
             stream: true,
          })
          let text = ''
+         let html = ''
          for await (const chunk of response) {
             const converter = new Showdown.Converter()
             const [choice] = chunk.choices
             const { content } = choice.delta
             content && (text += content)
-            const html = converter.makeHtml(text)
+            html = converter.makeHtml(text)
             setResponse(html)
          }
 
          setIsLoading(false)
+         localStorage.setItem('response', response == 'Your request is not related to the topic, try again!' ? '' : html)
       }
 
       generateText()
+      toast.success('Your last response will be saved')
    }
 
    return (
@@ -112,27 +122,12 @@ export default function Personalizer({ setResponse, setIsLoading, isLoading }) {
                         : `I'm INTJ, Professor in the university. Enjoy reading romances and traveling. Speak English and Japanese, I'm 30 y.o.`
                   }
                />
-               <button className='bg-accent rounded-full flex items-center justify-center p-0 w-12 h-12 relative top-2' disabled={isLoading}>
-                  <svg
-                     className='scale-[180%] transition-transform'
-                     width='24'
-                     height='24'
-                     viewBox='0 0 24 24'
-                     fill='none'
-                     xmlns='http://www.w3.org/2000/svg'
-                  >
+               <button className='bg-accent btn rounded-full p-0 w-12 h-12 relative top-2' disabled={isLoading}>
+                  <svg className='transition-transform' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='currentColor'>
                      <path
                         className='fill-base-100'
-                        d='M12.0519 14.8285L13.4661 16.2427L17.7088 12L13.4661 7.7574L12.0519 9.17161L13.8804 11H6.34321V13H13.8803L12.0519 14.8285Z'
-                        fill='currentColor'
-                     />
-                     <path
-                        className='fill-base-100'
-                        fillRule='evenodd'
-                        clipRule='evenodd'
-                        d='M19.7782 19.7782C24.0739 15.4824 24.0739 8.51759 19.7782 4.22183C15.4824 -0.0739417 8.51759 -0.0739417 4.22183 4.22183C-0.0739417 8.51759 -0.0739417 15.4824 4.22183 19.7782C8.51759 24.0739 15.4824 24.0739 19.7782 19.7782ZM18.364 18.364C21.8787 14.8492 21.8787 9.15076 18.364 5.63604C14.8492 2.12132 9.15076 2.12132 5.63604 5.63604C2.12132 9.15076 2.12132 14.8492 5.63604 18.364C9.15076 21.8787 14.8492 21.8787 18.364 18.364Z'
-                        fill='currentColor'
-                     />
+                        d='M12 11V8L16 12L12 16V13H8V11H12ZM12 2C17.52 2 22 6.48 22 12C22 17.52 17.52 22 12 22C6.48 22 2 17.52 2 12C2 6.48 6.48 2 12 2ZM12 20C16.42 20 20 16.42 20 12C20 7.58 16.42 4 12 4C7.58 4 4 7.58 4 12C4 16.42 7.58 20 12 20Z'
+                     ></path>
                   </svg>
                </button>
                <svg

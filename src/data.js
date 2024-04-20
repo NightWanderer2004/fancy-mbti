@@ -188,7 +188,7 @@ module.exports = {
       {
          type: 'ESTJ',
          color: '#c0d0e8',
-         name: 'Executive',
+         name: 'Executer',
          about: 'ESTJs are practical and organized individuals, known for their leadership and responsibility. They are efficient and reliable, valuing structure and tradition in their lives. While they may appear strict, ESTJs possess a strong sense of duty and a commitment to excellence.',
          purpose:
             'Driven by a desire to achieve their goals and uphold societal norms, ESTJs excel in roles that involve leadership and organization. They find fulfillment in guiding others and ensuring that tasks are completed efficiently and effectively.',

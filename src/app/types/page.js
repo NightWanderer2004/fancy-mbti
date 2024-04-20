@@ -3,7 +3,7 @@ import MBTI from '@/components/MBTI'
 
 export default function Types() {
    return (
-      <div className='pt-24 relative z-40 animate-fadeUp'>
+      <div className='pt-24 relative z-40 animate-fadeUp max-w-2xl mx-auto'>
          <Glow className='top-[170px] scale-[1800%] md:-top-[200px] -left-[55px] bg-primary/90' />
          <Glow className='top-[1350px] md:top-[1200px] left-[90px] md:left-[115%] bg-primary' />
          <div className='mb-16 relative'>
