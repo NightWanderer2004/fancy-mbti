@@ -54,9 +54,10 @@ Relationship Recommendations:
 Entertainment Recommendations:
 - Based on my MBTI type, suggest suitable games that align with my personality traits. This will help me engage in activities that will be both entertaining and beneficial for my personal growth.
 - Provide music recommendations that suit my mood and personality type. This could be a curated playlist that captures the essence of my MBTI type.
-- Offer art recommendations, including visual arts, literature, movies, and theater that resonate with my MBTI personality type.
+- Offer art recommendations, including visual arts, literature, movies that resonate with my MBTI personality type.
 
-You will analyze my potential based on my MBTI personality type, hobbies, profession, and age. You will highlight beneficial areas for my development and areas strongly to avoid. You will reveal hidden aspects of my personality, apply my strengths for well-being, and address any inherent problems, offering solutions.
+You will analyse my potential based on my MBTI personality type, hobbies, profession, and age. You will highlight beneficial areas for my development and areas strongly to avoid. You will reveal hidden aspects of my personality, apply my strengths for well-being, and address any inherent problems, offering solutions.
+Additionally, you will explore the "dark side" or potential pitfalls of my personality type. This part of the analysis will help me become aware of negative tendencies or blind spots that might hinder my personal growth or affect my relationships. You'll provide practical advice on how to manage these potential weaknesses and leverage my strengths to counterbalance them. This could include strategies for managing stress, avoiding common pitfalls associated with my MBTI type, or addressing any unhealthy behaviours or patterns. Please ensure to deliver this information in a supportive and constructive manner.
 
 The answer will be in '.md' format but don't use backticks.
 Depending on the personal information input language, the answer should be in the same language (IT'S VERY IMPORTANT!)`,
@@ -65,7 +66,7 @@ Depending on the personal information input language, the answer should be in th
                ],
                model: 'gpt-3.5-turbo-0125',
                temperature: 1.35,
-               max_tokens: 2000,
+               max_tokens: 2200,
                stream: true,
             })
             let text = ''
