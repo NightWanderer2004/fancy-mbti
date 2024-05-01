@@ -11,7 +11,7 @@ export default function Page({ params }) {
 
    return (
       <>
-         <div className='w-screen h-screen fixed top-0 left-0 opacity-[0.03]' style={{ backgroundColor: color }}></div>
+         <div className='w-screen h-screen fixed top-0 left-0 opacity-[0.03] bg-blend-multiply' style={{ backgroundColor: color }}></div>
          <div className='pt-24 relative z-40 animate-fadeUp max-w-2xl mx-auto'>
             <Glow
                className='top-[40px] lg:top-[100px] left-0 lg:-left-[470px] opacity-35 scale-[1550%] lg:scale-[1220%]'
