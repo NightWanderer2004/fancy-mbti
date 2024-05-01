@@ -101,10 +101,11 @@ Depending on the personal information input language, the answer should be in th
                Realize your potential with <span className='text-primary'>AI</span>
             </h1>
             <p className='mt-0 leading-relaxed max-w-md md:max-w-lg sm:pb-5 md:pb-2'>
-               Just type your <span className='text-primary font-medium font-aspekta'>MBTI</span>, maybe{' '}
-               <span className='text-primary font-medium font-aspekta'>hobbies</span> or your{' '}
-               <span className='text-primary font-medium font-aspekta'>profession</span>,{' '}
-               <span className='text-primary font-medium font-aspekta'>age</span>
+               Just type your <span className='mix-blend-multiply text-primary font-medium font-aspekta'>MBTI</span>,{' '}
+               <span className='mix-blend-multiply text-primary font-medium font-aspekta'>ennegram</span>, also{' '}
+               <span className='mix-blend-multiply text-primary font-medium font-aspekta'>hobbies</span> and your{' '}
+               <span className='mix-blend-multiply text-primary font-medium font-aspekta'>profession</span>,{' '}
+               <span className='mix-blend-multiply text-primary font-medium font-aspekta'>age</span>
             </p>
             <form
                onSubmit={handleSubmit}

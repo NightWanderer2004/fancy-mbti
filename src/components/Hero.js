@@ -7,7 +7,7 @@ export default function Hero() {
                   Explore yourself with{' '}
                   <span className='text-base-100 relative z-10 md:top-2'>
                      MBTI
-                     <div className='w-[165px] md:w-[195px] h-[65px] md:h-[75px] bg-primary -z-10 absolute top-[10px] md:top-[15px] -left-2 rotate-[-1.6deg]'></div>
+                     <div className='mix-blend-multiply w-[165px] md:w-[195px] h-[65px] md:h-[75px] bg-primary -z-10 absolute top-[10px] md:top-[15px] -left-2 rotate-[-1.6deg]'></div>
                   </span>
                </h1>
                <p className='py-3 text-lg md:text-xl max-w-sm'>
