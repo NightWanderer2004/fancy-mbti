@@ -34,39 +34,25 @@ export default function Personalizer({ setResponse, setIsLoading, isLoading }) {
                messages: [
                   {
                      role: 'system',
-                     content: `Being a MBTI and psychology expert, create an instruction for me on how to boost my personality and use my natural strengths based on my data that I provide you in triple quotes. Answer in a friendly and open style. Explain how and why my interests can be related to each other.
+                     content: `As an expert in MBTI and psychology, I want you to provide a comprehensive analysis of the my personality based on the data I provide. The analysis should cover the my strengths, weaknesses, and potential areas for growth. You should also reveal hidden aspects of my personality and recommend strategies for using my strengths to improve my well-being.
 
-Matching Function:
-- Develop an algorithm that suggests me with compatible MBTI types for communication or cooperation based on the user's MBTI type. This will help me find like-minded individuals and project partners based on MBTI.
+Show me examples how I use my cognitive functions based on my MBTI type, examples will be explained based on data I provide.
 
-Communication Trainрing:
-- Create an educational function that helps me develop effective methods of communication with different MBTI types. Include advice on adjusting communication style to match the preferences of the conversation partner.
+The analysis should also cover the my "dark side" or potential pitfalls associated with my MBTI and usage of cognitive functions. You should provide practical advice on how to manage these potential weaknesses and leverage the my strengths to counterbalance them. This could include strategies for managing stress, avoiding common pitfalls associated with my MBTI type, or addressing any unhealthy behaviours or patterns.
 
-Self-Discovery Tool:
-- Using information about the mine MBTI type to suggest personal strategies for personal growth and development. This could include recommendations for improving weaknesses and strengthening personality strengths.
+Based on the my personality type, recommend compatible MBTI types for communication and cooperation, and explain the reasons for these recommendations. Provide advice on how to adjust communication style to match the preferences of different conversation partners.
 
-Career Recommendations:
-- Create a function that provides specialised career recommendations based on the my MBTI type and my own preferences. I would get recommendations about professions that match my unique skills, interests, helping me make more informed career decisions.
+Finally, based on the my MBTI type, provide recommendations for hobbies, professions, and recreational activities that align with my personality traits. This could include suggestions for games, music, and art that resonate with their personality type.
 
-Relationship Recommendations:
- - Develop a function that uses my MBTI type to suggest compatible types for relationships. This tool will not only consider romantic relationships, but also friendships. It will evaluate the potential dynamics between me and others, highlighting the strengths and potential challenges of these pairings.
+The overall goal of this prompt is to help the me better understand myself and use my natural strengths to improve my overall well-being, happiness and tell a lot of interesting facts about my behaviour.
 
-Entertainment Recommendations:
-- Based on my MBTI type, suggest suitable games that align with my personality traits. This will help me engage in activities that will be both entertaining and beneficial for my personal growth.
-- Provide music recommendations that suit my mood and personality type. This could be a curated playlist that captures the essence of my MBTI type.
-- Offer art recommendations, including visual arts, literature, movies that resonate with my MBTI personality type.
-
-You will analyse my potential based on my MBTI personality type, hobbies, profession, and age. You will highlight beneficial areas for my development and areas strongly to avoid. You will reveal hidden aspects of my personality, apply my strengths for well-being, and address any inherent problems, offering solutions.
-Additionally, you will explore the "dark side" or potential pitfalls of my personality type. This part of the analysis will help me become aware of negative tendencies or blind spots that might hinder my personal growth or affect my relationships. You'll provide practical advice on how to manage these potential weaknesses and leverage my strengths to counterbalance them. This could include strategies for managing stress, avoiding common pitfalls associated with my MBTI type, or addressing any unhealthy behaviours or patterns. Please ensure to deliver this information in a supportive and constructive manner.
-
-The answer will be in '.md' format but don't use backticks.
-Depending on the personal information input language, the answer should be in the same language (IT'S VERY IMPORTANT!)`,
+The answer will be in '.md' format but don't use backticks.`,
                   },
-                  { role: 'user', content: `"""${input}"""` },
+                  { role: 'user', content: `${input}` },
                ],
                model: 'gpt-3.5-turbo-0125',
-               temperature: 1.35,
-               max_tokens: 3000,
+               temperature: 1.4,
+               max_tokens: 3400,
                stream: true,
             })
             let text = ''
@@ -105,7 +91,7 @@ Depending on the personal information input language, the answer should be in th
                <span className='mix-blend-multiply text-primary font-medium font-aspekta'>ennegram</span>, also{' '}
                <span className='mix-blend-multiply text-primary font-medium font-aspekta'>hobbies</span> and your{' '}
                <span className='mix-blend-multiply text-primary font-medium font-aspekta'>profession</span>,{' '}
-               <span className='mix-blend-multiply text-primary font-medium font-aspekta'>age</span>
+               <span className='mix-blend-multiply text-primary font-medium font-aspekta'>age</span> will be helpful
             </p>
             <form
                onSubmit={handleSubmit}
