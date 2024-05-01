@@ -66,7 +66,7 @@ Depending on the personal information input language, the answer should be in th
                ],
                model: 'gpt-3.5-turbo-0125',
                temperature: 1.35,
-               max_tokens: 2200,
+               max_tokens: 3000,
                stream: true,
             })
             let text = ''
