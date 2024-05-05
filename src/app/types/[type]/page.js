@@ -58,10 +58,10 @@ export default function Page({ params }) {
                   {info.name}
                </p>
             </div>
-            <p className='rounded-xl p-3 shadow-sm' style={{ backgroundColor: `${color}0c` }}>
+            <p className='rounded-xl p-2 border-[3px] mb-3' style={{ backgroundColor: `${color}0c`, borderColor: `${color}05` }}>
                {info.about}
             </p>
-            <div className='flex flex-col gap-4'>
+            <div className='flex flex-col gap-3'>
                {Object.keys(info)
                   .slice(4)
                   .map((item, index) => (
