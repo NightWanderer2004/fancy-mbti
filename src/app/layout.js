@@ -20,7 +20,7 @@ export default function Layout({ children }) {
          <body className='overflow-x-hidden'>
             <div className='flex flex-col min-h-screen overflow-hidden relative'>
                <Navbar />
-               <div className='container mx-auto px-5 md:px-12 pb-[140px] flex-1 prose max-w-full'>{children}</div>
+               <div className='container mx-auto px-5 md:px-12 pb-[140px] flex-1 prose prose-headings:font-aspekta max-w-full'>{children}</div>
                <Footer />
             </div>
          </body>

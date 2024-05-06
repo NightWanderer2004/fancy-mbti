@@ -27,7 +27,9 @@ export default function Footer() {
                X
             </a>
          </nav>
-         <p className='text-center text-accent'>All personal information on this site is not stored and kept private</p>
+         <p className='text-center text-accent underline'>
+            <a href='/privacy'>All personal information on this site is not stored and kept private</a>
+         </p>
       </footer>
    )
 }
