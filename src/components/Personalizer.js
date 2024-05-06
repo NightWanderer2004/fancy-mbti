@@ -99,7 +99,7 @@ The answer will be in '.md' format but don't use backticks.`,
             >
                <TextareaAutosize
                   minRows={2}
-                  maxRows={6}
+                  maxRows={7}
                   maxLength={320}
                   onChange={e => {
                      if (e.target.value.length >= 320) toast.warning('Max length is 320 characters')
@@ -110,6 +110,7 @@ The answer will be in '.md' format but don't use backticks.`,
                   className={`flex-1 pr-1 bg-transparent ${
                      error ? 'placeholder:text-error' : 'text-neutral'
                   } text-lg font-aspekta leading-normal resize-none outline-none`}
+                  style={{ scrollbarWidth: 'none' }}
                   placeholder={
                      error
                         ? error
