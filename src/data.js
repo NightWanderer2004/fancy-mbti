@@ -115,7 +115,7 @@ module.exports = {
       },
       {
          type: 'ISTP',
-         color: '#696969',
+         color: '#4b7fb3',
          name: 'Craftsman',
          about: 'ISTPs are pragmatic and resourceful individuals, known for their adaptability and problem-solving skills. They are hands-on learners who value practical experience and independence. While they may appear laid-back, ISTPs possess a keen sense of curiosity and a love of adventure.',
          purpose:
