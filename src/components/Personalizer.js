@@ -31,6 +31,7 @@ export default function Personalizer({ setResponse, setIsLoading, isLoading }) {
       try {
          const generateText = async () => {
             const response = await openai.chat.completions.create({
+               model: 'gpt-4o',
                messages: [
                   {
                      role: 'system',
@@ -50,9 +51,8 @@ The answer will be in '.md' format but don't use backticks.`,
                   },
                   { role: 'user', content: `${input}` },
                ],
-               model: 'gpt-3.5-turbo-0125',
-               temperature: 1.4,
-               max_tokens: 3400,
+               temperature: 1.1,
+               max_tokens: 1200,
                stream: true,
             })
             let text = ''
