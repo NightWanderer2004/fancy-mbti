@@ -100,9 +100,9 @@ The answer will be in '.md' format but don't use backticks.`,
                <TextareaAutosize
                   minRows={2}
                   maxRows={7}
-                  maxLength={320}
+                  maxLength={500}
                   onChange={e => {
-                     if (e.target.value.length >= 320) toast.warning('Max length is 320 characters')
+                     if (e.target.value.length >= 500) toast.warning('Max length is 500 characters')
                      setError('')
                      setInput(e.target.value)
                   }}
